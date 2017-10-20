@@ -24,11 +24,11 @@ function allborders()
 {
 	flag = true;
 	var bound = document.querySelectorAll(".boundary");
-	document.getElementById("status").textContent = "You moved outside the maze, you lose.";
+	document.getElementById("status").textContent = "You lose.";
 
 	for (i = 0;i < bound.length;i++)
 	{
-			bound[i].className ="You moved outsie the border, you lose";
+			bound[i].className =" You lose";
 	}
 
 }
@@ -62,7 +62,7 @@ function end()
 		document.getElementById("status").textContent = "Sorry, you lost.";
 
 	} else{
-		document.getElementById("status").textContent = "You win!";
+		document.getElementById("status").textContent = "Winner!";
 	}
 
 
