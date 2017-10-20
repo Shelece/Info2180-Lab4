@@ -24,11 +24,11 @@ function allborders()
 {
 	flag = true;
 	var bound = document.querySelectorAll(".boundary");
-	document.getElementById("status").textContent = "Sorry, you lost.";
+	document.getElementById("status").textContent = "You moved outside the maze, you lose.";
 
 	for (i = 0;i < bound.length;i++)
 	{
-			bound[i].className ="boundary youlose";
+			bound[i].className ="You moved outsie the border, you lose";
 	}
 
 }
